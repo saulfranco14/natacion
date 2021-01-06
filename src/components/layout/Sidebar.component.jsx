@@ -31,6 +31,7 @@ const Sidebar = () => {
                         Usuarios 
                     </h3> 
                 </Link>
+
                  {/* Pagos */}
                  <Link to={'/payment'} > 
                     <h3> 
@@ -41,18 +42,9 @@ const Sidebar = () => {
                         Pagos 
                     </h3> 
                 </Link>
-                {/* Profesores */}
-                <Link to={'/teachers'} > 
-                    <h3> 
-                        <EmojiPeopleIcon
-                             fontSize="large"
-                        />
-                        {"  "}
-                        Profesores 
-                    </h3> 
-                </Link>
-                 {/* Clase de usuarios */}
-                 <Link to={'/class'} > 
+
+                {/* Clases */}
+                <Link to={'/class'} > 
                     <h3>
                         <AssistantIcon
                              fontSize="large"
@@ -61,6 +53,7 @@ const Sidebar = () => {
                         Clases 
                     </h3>
                 </Link>
+
                 {/* Clase de usuarios */}
                 <Link to={'/classofusers'} > 
                     <h3> 
@@ -71,8 +64,9 @@ const Sidebar = () => {
                         Clases por usuario 
                     </h3> 
                 </Link>
+
                 {/* Horarios */}
-                <Link to={'/schedule'} > 
+                {/* <Link to={'/schedule'} > 
                     <h3> 
                         <TimerIcon
                              fontSize="large"
@@ -80,9 +74,21 @@ const Sidebar = () => {
                         {"  "} 
                         Horarios 
                     </h3> 
+                </Link> */}
+
+                {/* Profesores */}
+                <Link to={'/teachers'} > 
+                    <h3> 
+                        <EmojiPeopleIcon
+                             fontSize="large"
+                        />
+                        {"  "}
+                        Profesores 
+                    </h3> 
                 </Link>
+
                 {/* Entrenamientos */}
-                <Link to={'/training'} > 
+                {/* <Link to={'/training'} > 
                     <h3> 
                         <AccessibilityNewIcon
                              fontSize="large"
@@ -90,7 +96,8 @@ const Sidebar = () => {
                         {"  "} 
                         Entrenamientos 
                     </h3> 
-                </Link>
+                </Link> */}
+                
                 {/* Roles */}
                 <Link to={'/roles'} > 
                     <h3> 
@@ -101,10 +108,6 @@ const Sidebar = () => {
                         Roles 
                     </h3> 
                 </Link>
-
-
-
-               
             </aside>
         </Fragment>
      );

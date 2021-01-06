@@ -1,7 +1,7 @@
 import React, { Fragment }  from 'react';
 import Login                from './components/auth/Login.component';
 import Dashboard            from './components/Dashboard.component';
-import User                 from  './components/listModels/User.component';
+import User                 from  './components/listModels/user/User.component';
 import Teacher              from  './components/listModels/Teacher.component';
 import Payment              from './components/listModels/Payment.component';
 import Class                from './components/listModels/Class.component';
@@ -9,6 +9,7 @@ import ClassofUser          from './components/listModels/ClassofUser.component'
 import Hours                from './components/listModels/Hours.component';
 import Training             from './components/listModels/Training.component';
 import Roles                from './components/listModels/Roles.component';
+import CreateUser           from './components/listModels/user/CreateUser.component';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -27,7 +28,7 @@ function App() {
           <Route exact path="/schedule"           component={Hours} />
           <Route exact path="/training"           component={Training} />
           <Route exact path="/roles"              component={Roles} />
-
+          <Route exact path="/createUser"         component={CreateUser}/>
         </Switch>
       </Router>
     </Fragment>
