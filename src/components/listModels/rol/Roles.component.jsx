@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
-import Sidebar from '../layout/Sidebar.component';
-import Header from '../layout/Header.component';
+import Sidebar from '../../layout/Sidebar.component';
+import Header from '../../layout/Header.component';
+import { Link } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
-import { columnRoles } from '../../utils/rowData';
+import { columnRoles } from '../../../utils/rowData';
 
 const rowsRoles = [
     { id: 1, nombre_rol: "administrativo", descripcion_rol: "Se encarga de administrar el sistema"},
@@ -25,11 +26,13 @@ const Roles = () => {
                         <div className="contenedor-tareas">
                             <h1>Roles</h1>
                             <div className="buttonCreate">
-                                <button
-                                    className="btn btn-primario"
-                                >
-                                    Crear rol
-                                </button>
+                                <Link to={'/createRole'} > 
+                                    <button
+                                        className="btn btn-primario"
+                                    >
+                                        Crear role
+                                    </button>
+                                </Link>
                             </div>
                          </div>
                          <div className="tableCenter" >

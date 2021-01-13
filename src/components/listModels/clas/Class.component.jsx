@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
-import Sidebar from '../layout/Sidebar.component';
-import Header from '../layout/Header.component';
+import Sidebar from '../../layout/Sidebar.component';
+import Header from '../../layout/Header.component';
+import { Link } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
-import { columnsClasses } from '../../utils/rowData';
+import { columnsClasses } from '../../../utils/rowData';
 
 const rowsClass = [
     { id: 1, created_at: "2021-01-04 07:48:20", updated_at: "2020-01-04 09:50:00", horario_clase: "7:00 a 8:00 am ", capacidad_clase:`8 personas`, etiqueta: "clase de la mañana", profesor: "Hector", active: false  },
@@ -23,11 +24,13 @@ const Class = () => {
                         <div className="contenedor-tareas">
                             <h1>Clases</h1>
                             <div className="buttonCreate">
-                                <button
-                                    className="btn btn-primario"
-                                >
-                                    Crear clase
-                                </button>
+                                <Link to={'/createClass'} > 
+                                    <button
+                                        className="btn btn-primario"
+                                    >
+                                        Crear clase
+                                    </button>
+                                </Link> 
                             </div>
                          </div>
                          <div className="tableCenter" >

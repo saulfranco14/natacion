@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
-import Sidebar from '../layout/Sidebar.component';
-import Header from '../layout/Header.component';
+import Sidebar from '../../layout/Sidebar.component';
+import Header from '../../layout/Header.component';
+import { Link } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
-import { columnsPayment } from '../../utils/rowData';
+import { columnsPayment } from '../../../utils/rowData';
 
 const rowsPayment = [
     { id: 1, fecha_pago: "2020-12-30 03:48:20", user_id: "Saúl Mauricio Franco Rentería", concepto: "Mensualidad", etiqueta: "3 veces por semana", costo: "$880", firma_caja: "Laura Hernandez"},
@@ -25,11 +26,13 @@ const User = () => {
                         <div className="contenedor-tareas">
                             <h1>Pagos</h1>
                             <div className="buttonCreate">
-                                <button
-                                    className="btn btn-primario"
-                                >
-                                    Crear pago
-                                </button>
+                                <Link to={'/createPayment'} > 
+                                    <button
+                                        className="btn btn-primario"
+                                    >
+                                        Crear pago
+                                    </button>
+                                </Link>  
                             </div>
                         </div>
                         <div className="tableCenter" >

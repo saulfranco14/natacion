@@ -5,8 +5,6 @@ import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import AssistantIcon from '@material-ui/icons/Assistant';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import TimerIcon from '@material-ui/icons/Timer';
-import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 

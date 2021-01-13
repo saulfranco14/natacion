@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
-import Sidebar from '../layout/Sidebar.component';
-import Header from '../layout/Header.component';
+import Sidebar from '../../layout/Sidebar.component';
+import Header from '../../layout/Header.component';
+import { Link } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
-import { columnsTeacher } from '../../utils/rowData';
+import { columnsTeacher } from '../../../utils/rowData';
 
 const rowsTeacher = [
     { id: 1 , nombre: "Jennifer Hernandez", edad: 24, telefono_celular: "5543920293", email:"jenni@gmail.com", role:"Profesor", active: true},
@@ -24,11 +25,13 @@ const Teacher = () => {
                         <div className="contenedor-tareas">
                             <h1>Profesores</h1>
                             <div className="buttonCreate">
-                                <button
-                                    className="btn btn-primario"
-                                >
-                                    Crear profesor
-                                </button>
+                                <Link to={'/createTeacher'} > 
+                                    <button
+                                        className="btn btn-primario"
+                                    >
+                                        Crear profesor
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="tableCenter" >
